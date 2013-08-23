@@ -1,8 +1,15 @@
 var mainContent = document.getElementById("mainContent");
 mainContent.setAttribute("align","right");
 
-mainTitle = document.getElementById("mainTitle");
-console.log(mainTitle.innerHTML)
+//create the elements
+var newHeading = document.createElement("h1");
+var newParagraph = document.createElement("p");
 
-var sidebar = document.getElementById("sidebar");
-console.log(sidebar.innerHTML)
+//add content
+newHeading.innerHTML = "Did you know?";
+newParagraph.innerHTML = "California produces over 17 million gallons of wine each year!";
+
+//attach the new elements to the document
+document.getElementById("trivia").appendChild(newHeading);
+document.getElementById("trivia").appendChild(newParagraph);
+
