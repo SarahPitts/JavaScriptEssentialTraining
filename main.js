@@ -16,3 +16,19 @@ newParagraph.appendChild(paraText);
 //attach the new elements to the document
 document.getElementById("trivia").appendChild(newHeading);
 document.getElementById("trivia").appendChild(newParagraph);
+
+
+//add onblur and onfocus to contact form
+var emailField = document.getElementById("email2");
+
+emailField.onfocus = function() {
+	if ( emailField.value == "your email") {
+		emailField.value = "";
+	}
+};
+
+emailField.onblur = function() {
+	if ( emailField.value == "") {
+		emailField.value = "your email";
+	}
+};
