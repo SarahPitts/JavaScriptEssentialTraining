@@ -911,3 +911,8 @@ body.hasCrumbs #mainContent #mainArticle {
 	color: #fff;
 	letter-spacing:.1em;
 }
+/* added for error message on form */
+#errorMessage {
+    font-size: 1.5em;
+    color: #f00;
+}

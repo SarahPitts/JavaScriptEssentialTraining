@@ -22,64 +22,18 @@
   <div id="mainContent">
     <h1 id="pageID">Contact</h1>
     <div id="mainArticle">
-      <h1>We want to hear from you</h1>
-      <p>...and if you're on this page, we're guessing you've got something to say! Take a look at our contact options below. If none of them are right for you, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support information see below!</span></p>
-      <h2>Support</h2>
-      <p>If you have booked one of our tours, or if you are currently on a tour and need our assistance, we've got a couple of options for you. </p>
-      <form id="frmSupport" name="frmSupport" method="post" action="support_process.htm">
-        <fieldset id="quickSupport">
-          <legend><strong>Quick Support</strong></legend>
-          <p> If your request isn't urgent, drop us a quick line and we'll get back to you within 24 hours </p>
-          <p>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" tabindex="10" />
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input type="text" value="your email" name="email" id="email" tabindex="20" />
-          </p>
-          <p>
-            <label for="tourID">Tour Name: </label>
-            <input type="text" name="tourID" id="tourID" tabindex="30" />
-          </p>
-          <p>Tour Status:<br />
-            <label class="inline">
-              <input type="radio" name="tourStatus" value="booked" id="tourStatus_0" tabindex="40" />
-              I have booked a tour</label>
-            <label class="inline"><br />
-              <input type="radio" name="tourStatus" value="current" id="tourStatus_1" tabindex="50" />
-              I am on a tour</label>
-          </p>
-          <p>
-            <label for="comments">Comments </label>
-            <br />
-            <textarea name="comments" id="comments" cols="45" rows="5" tabindex="60"></textarea>
-          </p>
-          <p>
-            <input type="submit" name="submit" id="submit" value="Send" tabindex="70" />
-          </p>
-        </fieldset>
-      </form>
-      <div id="supportOptions">
-        <h3>If you need immediate assistance, we have the following options:</h3>
-        <p>Our 24-hour help line <br />
-          <strong>866-555-4311</strong></p>
-        <p><a href="contact/chat.htm">24-hour chat support</a></p>
-        <p>Agents are on call 24 hours a day to ensure you have the best tour experience ever!</p>
-      </div>
       <div id="contact">
-        <h2> Contact</h2>
-        <p>Would you like more information about one of our tours? Have a question that the site can't answer for you? Perhaps you want to suggest a tour for us? Please drop us a line, we'd love to hear from you!</p>
-        <form id="frmContact" name="frmContact" method="post" action="contact_process.htm">
+        <p>Would you like more information? Please drop us a line, we'd love to hear from you!</p>
+        <form id="frmContact" name="frmContact" method="post" action="thanks.htm">
           <fieldset id="personalInfo">
             <legend><strong>Personal Information</strong></legend>
             <p>
-              <label for="name2">Name</label>
-              <input name="name2" type="text" class="text" id="name2" tabindex="100" />
+              <label for="name">Name</label>
+              <input name="name" type="text" class="text" id="name" tabindex="100" />
             </p>
             <p>
               <label for="email">Email</label>
-              <input name="email2" type="text" class="text" id="email2" tabindex="110" />
+              <input name="email" type="text" class="text" id="email" tabindex="110" />
             </p>
             <p>
               <label for="phone">Phone</label>
@@ -205,8 +159,9 @@
               <input type="checkbox" name="newsletterNo" id="newsletterNo" tabindex="290" />
               <label for="newsletterNo" class="inline">No thanks!</label>
             </p>
+            <p><span id="errorMessage"></span></p>
             <p>
-              <input type="submit" name="submit2" id="submit2" value="Send" tabindex="300" />
+              <input type="submit"  name="submit2" id="submitBtn" value="Send" tabindex="300" />
             </p>
           </fieldset>
         </form>
@@ -261,5 +216,6 @@
   </div>
 </div>
 <script src="main.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
