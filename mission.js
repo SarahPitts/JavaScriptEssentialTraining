@@ -26,3 +26,8 @@ var intervalHandle = setInterval(changeImage,5000);
 myImage.onclick = function() {
 	clearInterval(intervalHandle);
 };
+
+
+
+var pageTitle = document.getElementById("pageID");
+pageTitle.innerHTML = "This title was replaced by JavaScript";
