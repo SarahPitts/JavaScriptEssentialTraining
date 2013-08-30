@@ -11,15 +11,8 @@ function prepareEventHandlers() {
 			document.getElementById("errorMessage").innerHTML = "";
 			return true;
 		}
-	};
+	}
 }
-
-// when the document loads
-window.onload =  function() {
-	prepareEventHandlers();
-};
-
-
 
 // show and hide sections of a form
 function preparePage() {
@@ -36,6 +29,25 @@ function preparePage() {
 	document.getElementById("tourSelection").style.display = "none";
 }
 
+// when the document loads
 window.onload =  function() {
+	prepareEventHandlers();
 	preparePage();
+};
+
+
+
+//add onblur and onfocus to contact form
+var nameField = document.getElementById("name");
+
+nameField.onfocus = function() {
+	if ( nameField.value == "your name") {
+		nameField.value = "";
+	}
+};
+
+nameField.onblur = function() {
+	if ( nameField.value == "") {
+		nameField.value = "your name";
+	}
 };

@@ -48,4 +48,3 @@ window.onload = function() {
 	setInterval(changeMessage,4000);
 	preparePage()
 };
-
