@@ -77,6 +77,12 @@ a.accent:hover {
 	color: #cb202a;
 }
 /* ^3 ------ global classes -------- */
+.example {
+    color: #fff;
+    font-size: 1em;
+    text-align: right;
+}
+
 .floatRight {
 	float: right;
 }
