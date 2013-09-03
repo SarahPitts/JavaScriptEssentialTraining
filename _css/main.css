@@ -77,11 +77,6 @@ a.accent:hover {
 	color: #cb202a;
 }
 /* ^3 ------ global classes -------- */
-.example {
-    color: #fff;
-    font-size: 1em;
-    text-align: right;
-}
 .floatRight {
 	float: right;
 }
@@ -116,6 +111,14 @@ a.accent:hover {
 	margin: 0 auto;
 	background: #fff;
 	text-align: left;
+}
+
+.highlight {
+	background: #ffffcc;
+}
+
+.bolded {
+  font-weight: bold;
 }
 
 /* ^4 ------------- home page specfic layout styles ----------- */
@@ -915,9 +918,4 @@ body.hasCrumbs #mainContent #mainArticle {
 	font: bold 1.6em Georgia, "Times New Roman", Times, serif;
 	color: #fff;
 	letter-spacing:.1em;
-}
-/* added for error message on form */
-#errorMessage {
-    font-size: 1.5em;
-    color: #f00;
 }
